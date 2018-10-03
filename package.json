@@ -1,0 +1,22 @@
+{
+  "name": "agencyx",
+  "version": "1.0.0",
+  "description": "Web development and design Agency portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danifdantas/AgencyX.git"
+  },
+  "author": "Blake Hause & Daniela Dantas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danifdantas/AgencyX/issues"
+  },
+  "homepage": "https://github.com/danifdantas/AgencyX#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

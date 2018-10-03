@@ -1,0 +1,141 @@
+//Imports
+@import '_vars';
+
+html {
+    box-sizing: border-box;
+}
+body{
+    background-color:$body-bg-color;
+    padding: 0;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif; 
+}
+.hidden {
+    display: none;
+}
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+.home-container {
+    background: url('../images/landing-pg-bg@2x.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+@media screen and (min-width: 750px){
+    .home-container {
+        background: url('../images/bg_desktop.jpg');
+        background-size:cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        
+     
+    }
+}
+// ___________________________Nav Styles
+#main-nav a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+}
+
+#main-nav a:hover
+{
+  color:$primary-color;
+}
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+.hamburger
+{
+  display: block;
+  width: 33px;
+  height: 3px;
+  margin-bottom: 5px;
+  position: relative;
+  background: $primary-color;
+  border-radius: 1px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+.line2 {
+    width: 40px;  
+}
+.line3 {
+    width: 23px;  
+}
+.hamburger:first-child
+{
+  transform-origin: 0% 0%;
+}
+.hamburger:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+//   background: #232323;
+}
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px) scaleX(1.3);
+}
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: $bg-alpha;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+//___________________________ Nav  styles end
