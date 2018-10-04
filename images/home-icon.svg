@@ -1,7 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.905 47.905">
-  <g id="Home-Icon" transform="translate(-14.2 -12.5)">
-    <rect id="Rectangle_4" data-name="Rectangle 4" width="4.12" height="3.808" transform="translate(44.165 40.764)"/>
-    <path id="Path_6" data-name="Path 6" d="M38.152,12.5A23.952,23.952,0,1,0,62.1,36.452,23.961,23.961,0,0,0,38.152,12.5ZM54.44,47.806h-18.2V35.47H29.194V47.806H21.553V31.375H54.44V47.806ZM18.032,29.6l14.4-7.641L58.273,29.6Z" transform="translate(0)"/>
-    <rect id="Rectangle_5" data-name="Rectangle 5" width="4.12" height="3.808" transform="translate(44.165 34.896)"/>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 227 227" style="enable-background:new 0 0 227 227;" xml:space="preserve">
+<style type="text/css">
+	.Drop_x0020_Shadow{fill:none;}
+	.Outer_x0020_Glow_x0020_5_x0020_pt{fill:none;}
+	.Blue_x0020_Neon{fill:none;stroke:#8AACDA;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;}
+	.Chrome_x0020_Highlight{fill:url(#SVGID_1_);stroke:#FFFFFF;stroke-width:0.3629;stroke-miterlimit:1;}
+	.Jive_GS{fill:#FFDD00;}
+	.Alyssa_GS{fill:#A6D0E4;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-569" y1="-271" x2="-569" y2="-272">
+	<stop  offset="0" style="stop-color:#656565"/>
+	<stop  offset="0.618" style="stop-color:#1B1B1B"/>
+	<stop  offset="0.6292" style="stop-color:#545454"/>
+	<stop  offset="0.9831" style="stop-color:#3E3E3E"/>
+</linearGradient>
+<g>
+	<rect x="139.3" y="130.5" width="17.2" height="15.9"/>
+	<path d="M114.2,12.5c-55.2,0-100,44.8-100,100c0,55.2,44.8,100,100,100s100-44.8,100-100C214.2,57.2,169.4,12.5,114.2,12.5z
+		 M182.2,159.9h-76v-51.5H76.8v51.5H44.9V91.3h137.3V159.9z M30.2,83.9L90.3,52l107.9,31.9H30.2z"/>
+	<rect x="139.3" y="106" width="17.2" height="15.9"/>
+</g>
 </svg>

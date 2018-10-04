@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 242 241" style="enable-background:new 0 0 242 241;" xml:space="preserve">
+<style type="text/css">
+	.Drop_x0020_Shadow{fill:none;}
+	.Outer_x0020_Glow_x0020_5_x0020_pt{fill:none;}
+	.Blue_x0020_Neon{fill:none;stroke:#8AACDA;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;}
+	.Chrome_x0020_Highlight{fill:url(#SVGID_1_);stroke:#FFFFFF;stroke-width:0.3629;stroke-miterlimit:1;}
+	.Jive_GS{fill:#FFDD00;}
+	.Alyssa_GS{fill:#A6D0E4;}
+	.st0{stroke:#000000;stroke-width:0.5;stroke-miterlimit:10;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-562" y1="-263" x2="-562" y2="-264">
+	<stop  offset="0" style="stop-color:#656565"/>
+	<stop  offset="0.618" style="stop-color:#1B1B1B"/>
+	<stop  offset="0.6292" style="stop-color:#545454"/>
+	<stop  offset="0.9831" style="stop-color:#3E3E3E"/>
+</linearGradient>
+<g>
+	<g>
+		<path class="st0" d="M148.1,64.2H94.6c-15.7,0-28.5,12.8-28.5,28.5v54.9c0,15.7,12.8,28.5,28.5,28.5h53.5
+			c15.7,0,28.5-12.8,28.5-28.5V92.7C176.6,77,163.8,64.2,148.1,64.2z M121.3,154.5c-19,0-34.4-15.4-34.4-34.4
+			c0-19,15.4-34.4,34.4-34.4s34.4,15.4,34.4,34.4C155.7,139.1,140.3,154.5,121.3,154.5z M157.4,91.8c-4.7,0-8.4-3.8-8.4-8.4
+			s3.8-8.4,8.4-8.4s8.4,3.8,8.4,8.4S162,91.8,157.4,91.8z"/>
+		<circle class="st0" cx="120.7" cy="120.1" r="22.9"/>
+		<path class="st0" d="M121,25.5c-52.2,0-94.5,42.3-94.5,94.5s42.3,94.5,94.5,94.5s94.5-42.3,94.5-94.5S173.2,25.5,121,25.5z
+			 M147.9,188.2H94.1c-22.1,0-40.2-18.1-40.2-40.2V92.9c0-22.1,18.1-40.2,40.2-40.2h53.8c22.1,0,40.2,18.1,40.2,40.2V148
+			C188.1,170.1,170,188.2,147.9,188.2z"/>
+	</g>
+	<path class="st0" d="M121-0.3C54.4-0.3,0.4,53.7,0.4,120.3s54,120.6,120.6,120.6s120.6-54,120.6-120.6S187.6-0.3,121-0.3z
+		 M121,227.2c-59.5,0-107.7-48.2-107.7-107.7C13.3,60.1,61.5,11.9,121,11.9s107.7,48.2,107.7,107.7C228.7,179,180.5,227.2,121,227.2
+		z"/>
+</g>
+</svg>

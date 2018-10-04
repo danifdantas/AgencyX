@@ -1,3 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.905 47.905">
-  <path id="About-Icon" d="M37.652,10.2A23.952,23.952,0,1,0,61.6,34.152,23.961,23.961,0,0,0,37.652,10.2ZM30.778,52.811a4.695,4.695,0,1,1,4.695-4.695A4.7,4.7,0,0,1,30.778,52.811Zm12.575-14.4H33.964v3.258H27.808V32.859H42.97c3.258-.575,3.641-6.515,0-7.282H29.149l-4.982-5.964H43.353C53.7,22.3,53.7,36.117,43.353,38.416Z" transform="translate(-13.7 -10.2)"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 226 222" style="enable-background:new 0 0 226 222;" xml:space="preserve">
+<style type="text/css">
+	.Drop_x0020_Shadow{fill:none;}
+	.Outer_x0020_Glow_x0020_5_x0020_pt{fill:none;}
+	.Blue_x0020_Neon{fill:none;stroke:#8AACDA;stroke-width:7;stroke-linecap:round;stroke-linejoin:round;}
+	.Chrome_x0020_Highlight{fill:url(#SVGID_1_);stroke:#FFFFFF;stroke-width:0.3629;stroke-miterlimit:1;}
+	.Jive_GS{fill:#FFDD00;}
+	.Alyssa_GS{fill:#A6D0E4;}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-570" y1="-273" x2="-570" y2="-274">
+	<stop  offset="0" style="stop-color:#656565"/>
+	<stop  offset="0.618" style="stop-color:#1B1B1B"/>
+	<stop  offset="0.6292" style="stop-color:#545454"/>
+	<stop  offset="0.9831" style="stop-color:#3E3E3E"/>
+</linearGradient>
+<path d="M113.7,10.2c-55.2,0-100,44.8-100,100c0,55.2,44.8,100,100,100s100-44.8,100-100C213.7,55,168.9,10.2,113.7,10.2z M85,188.1
+	c-10.8,0-19.6-8.8-19.6-19.6c0-10.8,8.8-19.6,19.6-19.6c10.8,0,19.6,8.8,19.6,19.6C104.7,179.3,95.9,188.1,85,188.1z M137.5,128
+	H98.3v13.6H72.6v-36.8h63.3c13.6-2.4,15.2-27.2,0-30.4H78.2L57.4,49.5h80.1C180.7,60.7,180.7,118.4,137.5,128z"/>
 </svg>
