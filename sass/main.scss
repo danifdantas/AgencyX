@@ -38,13 +38,16 @@ body{
 #main-nav a {
     text-decoration: none;
     color: #232323;
-    transition: color 0.3s ease;
+    // display: flex;
+  // justify-content: center;
+    transition: all 0.3s ease;
     
 }
 
 #main-nav a:hover
 {
   color:$primary-color;
+  padding-left: 3px;
 }
 #menuToggle
 {
@@ -122,7 +125,7 @@ body{
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  background: $bg-alpha;
+  background: $bg-alpha-nav;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -133,7 +136,12 @@ body{
 .icon {
   width: 12%;
   padding-left: 10px;
+  transition: all 0.3s ease;
 }
+.icon:hover {
+  color:$primary-color;  
+}
+
 #menu li
 {
   padding: 10px 0;
@@ -200,13 +208,14 @@ body{
       height: 100vh;
        margin-top: -20px;
        display: grid;
-       grid-template-columns: 0.5fr 2fr 0.5fr;
+       grid-template-columns: 0.5fr 3fr 0.5fr;
        grid-template-rows: 0.5fr 1fr 0.5fr;
        filter:$blur;
 }
 .page-title{
   grid-column: 2 / 3;
   place-self:center center;
+  padding-top: 1em;
   font-family: $title-font;
   font-size: 3rem;
   color: $body-bg-color;
@@ -217,8 +226,18 @@ body{
   background-color: $bg-alpha;
   padding: 1em;
   filter:$blur;
+  border-radius: 3px;
+  
 }
 .about-text p {
   color: $body-bg-color;
   
+}
+.p-scrl{
+  padding-left: 5em;
+  font-weight: bold;
+}
+#arrow-btn2{
+  width: 20%;
+  padding-left: 6em;
 }
