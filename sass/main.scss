@@ -10,6 +10,9 @@ body{
     margin: 0;
     font-family: $main-font; 
 }
+a{
+  text-decoration: none;
+}
 .hidden {
     display: none;
 }
@@ -108,7 +111,6 @@ body{
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-//   background: #232323;
 }
 #menuToggle input:checked ~ span:nth-last-child(3)
 {
@@ -247,35 +249,37 @@ body{
 .team-info{
   grid-column: 2 / 3;
   grid-row: 2 / 4;
+  display: grid;
+  grid-template-areas: 
+  'team-pic button';
+
 }
 .team-pic{
+  grid-area: team-pic;
   width:160px;
 }
 .button{
-  margin: 20px auto;
+  grid-area: button;
+  height: 25px;
+  // width:160px;
   cursor: pointer;
-  padding: 1em;
-  font-size: 1.2em;
+  text-align: center;
+  padding: 0.7em;
+  font-size: 1.0em;
   border-radius: 50px;
   text-transform: uppercase;
-  font-weight: 700;
-  
+  // font-weight: 700;
   background-color: $primary-color;
   color: white;
   white-space: nowrap;
   box-shadow: 0px 0px 0px 0px transparentize($primary-color, .75);
   @include transition(box-shadow .15s, transform .2s);
 
-  @include transform(translate(0, 0%));
-
   &:hover{
       box-shadow: 5px 5px 20px 5px transparentize(black, .85);
       @include transform(translate(0,-20%));
   }
-  &:active {
-      box-shadow: -5px -5px 10px 0px transparentize($primary-color, .65);
-      @include transform(translate(0, 0%));
-  }
+ 
 }
 // _____________________________Media Queries 
 
