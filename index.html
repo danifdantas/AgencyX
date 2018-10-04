@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script:7007%COpen+Sans:300i,400,600" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <title>Agency X</title>
 	
@@ -12,8 +13,9 @@
 <body>
 <div class="wrapper"> <!-- Wrapper starts -->
   
-    <section class="home-container">
+    <section id="bg-img">
       <h1 class="hidden">Agency X Landing Page</h1>
+        <div id="home-container">
           <nav id="main-nav">
               <div id="menuToggle">
                   <input type="checkbox" />
@@ -21,16 +23,34 @@
                   <span class="hamburger line2"></span>
                   <span class="hamburger line3"></span>
             <ul id="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
+                <!-- <li><a href="#"><object data="images/home-icon.svg" type="" class="icon"></object>Home</a></li> -->
+                <li><a href="#about-us">About Us <object data="images/about-icon.svg" type="" class="icon"></object></a></li>
                 <li><a href="#">Our Work</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
-            
+            </div>  <!-- menuToggle end -->
           </nav>
-        
+          <div id="logo-ctn">
+              <h1 class="logo">AGENCY</h1>
+              <h1 class="logo x">X</h1>
+          </div>
+          <div class="arrow-btn-ctn">
+            <a id="arrow-btn" href="#"><img src="images/arrow-btn.svg" alt="down arrow button"></a>
+        </div>
+        </div>   <!-- home-container end -->
+
       </section>
-    </div>
+      <section id="about-us">
+        <h1 class="page-title">About Us</h1>
+        <div class="about-text">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Ipsum, voluptates, consectetur, nihil quam quasi a similique assumenda 
+            eum beatae mollitia ipsam suscipit atque perspiciatis cum eos officia 
+            ullam sapiente adipisci ea vel. 
+            Ipsam, cupiditate maiores!</p>
+        </div>
+      </section>
+    
     
     </div> <!-- Wrapper ends -->
  
@@ -39,6 +59,6 @@
 
   <!-- javascript includes -->
 
-  <script src="js/main.js"></script>
+  <!-- <script src="js/main.js"></script> -->
 </body>
 </html>

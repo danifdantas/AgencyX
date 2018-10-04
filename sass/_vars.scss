@@ -3,11 +3,16 @@
 // main colors
 $body-bg-color: #FCFCFC;
 $primary-color: #F20909;
-$bg-alpha: rgba(206, 206, 206, 0.5);
+$bg-alpha: rgba(74, 74, 75, 0.5);
+
+//Fonts
+$main-font: 'Open Sans', sans-serif;
+$title-font:'Dancing Script', cursive;
 
 //effects
-// $blur:"-webkit-filter: blur(5px);
-// -moz-filter: blur(5px);
-// -o-filter: blur(5px);
-// -ms-filter: blur(5px);
-// filter: blur(5px);"
+$blur:"-webkit-filter: blur(5px);
+-moz-filter: blur(5px);
+-o-filter: blur(5px);
+-ms-filter: blur(5px);
+filter: blur(5px)";
+$logo-shadow: 0px 5px 15px rgba(242,9,9,0.8);

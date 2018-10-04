@@ -8,7 +8,7 @@ body{
     background-color:$body-bg-color;
     padding: 0;
     margin: 0;
-    font-family: 'Helvetica Neue', Helvetica, sans-serif; 
+    font-family: $main-font; 
 }
 .hidden {
     display: none;
@@ -17,29 +17,29 @@ body{
     display: grid;
     grid-gap: 20px;
 }
-.home-container {
-    background: url('../images/landing-pg-bg@2x.jpg');
+// ________________________________Landing Pg
+#bg-img {
+    background: url('../images/bg_mobile.jpg');
     background-size:cover;
     background-repeat: no-repeat;
+    background-position: center;
     height: 100vh;
-    width: 100%;
+    // width: 100%;
+}
+#home-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
-@media screen and (min-width: 750px){
-    .home-container {
-        background: url('../images/bg_desktop.jpg');
-        background-size:cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-        
-     
-    }
-}
 // ___________________________Nav Styles
 #main-nav a {
     text-decoration: none;
     color: #232323;
     transition: color 0.3s ease;
+    
 }
 
 #main-nav a:hover
@@ -49,7 +49,8 @@ body{
 #menuToggle
 {
   display: block;
-  position: relative;
+  // position: relative;
+  position: fixed;
   top: 50px;
   left: 50px;
   z-index: 1;
@@ -129,13 +130,95 @@ body{
   transform: translate(-100%, 0);
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
+.icon {
+  width: 12%;
+  padding-left: 10px;
+}
 #menu li
 {
   padding: 10px 0;
   font-size: 22px;
+  border-bottom: 1px solid black;
+  // display: flex;
+  // align-items: center;
 }
 #menuToggle input:checked ~ ul
 {
   transform: none;
 }
 //___________________________ Nav  styles end
+
+// __________________________Logo Styles
+#logo-ctn {
+  margin:0 auto;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+#logo-ctn h1 {
+  margin:0 auto;
+}
+.logo{
+  // padding-top: 50%; 
+  color: $primary-color;
+  font-size: 2.5rem;
+  text-shadow: $logo-shadow;
+}
+
+// _______________________________Logo Styles End
+
+.arrow-btn-ctn {
+  // margin:0 auto;
+  width: 30%;
+  place-self:center center;
+  grid-column: 2 / 3;
+  grid-row: 3 / 3;
+}
+
+@media screen and (min-width: 750px){
+    #bg-img {
+        background: url('../images/bg_desktop.jpg');
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+    }
+    .logo{
+       font-size: 3.5rem;
+    }
+}
+
+// _____________________________About Us Pg
+#about-us {
+      background: url('../images/about-bg-mobile.jpg');
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+       margin-top: -20px;
+       display: grid;
+       grid-template-columns: 0.5fr 2fr 0.5fr;
+       grid-template-rows: 0.5fr 1fr 0.5fr;
+       filter:$blur;
+}
+.page-title{
+  grid-column: 2 / 3;
+  place-self:center center;
+  font-family: $title-font;
+  font-size: 3rem;
+  color: $body-bg-color;
+}
+.about-text{
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background-color: $bg-alpha;
+  padding: 1em;
+  filter:$blur;
+}
+.about-text p {
+  color: $body-bg-color;
+  
+}
