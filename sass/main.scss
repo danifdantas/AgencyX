@@ -32,6 +32,7 @@ body{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  
 }
 
 // ___________________________Nav Styles
@@ -40,7 +41,7 @@ body{
     color: #232323;
     // display: flex;
   // justify-content: center;
-    transition: all 0.3s ease;
+    transition: $main-transition;
     
 }
 
@@ -186,20 +187,8 @@ body{
   grid-row: 3 / 3;
 }
 
-@media screen and (min-width: 750px){
-    #bg-img {
-        background: url('../images/bg_desktop.jpg');
-        background-size:cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 100vh;
-    }
-    .logo{
-       font-size: 3.5rem;
-    }
-}
 
-// _____________________________About Us Pg
+// _____________________________About Us Section
 #about-us {
       background: url('../images/about-bg-mobile.jpg');
       background-size:cover;
@@ -210,7 +199,8 @@ body{
        display: grid;
        grid-template-columns: 0.5fr 3fr 0.5fr;
        grid-template-rows: 0.5fr 1fr 0.5fr;
-       filter:$blur;
+      //  @include blur-effect(0.5px);
+       transition: $main-transition;
 }
 .page-title{
   grid-column: 2 / 3;
@@ -219,25 +209,85 @@ body{
   font-family: $title-font;
   font-size: 3rem;
   color: $body-bg-color;
+  
 }
 .about-text{
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  display:grid;
   background-color: $bg-alpha;
   padding: 1em;
-  filter:$blur;
   border-radius: 3px;
+  p {
+    color: $body-bg-color;
+    place-self:center center;
+  }
+  a {
+    place-self:center center;
+    width: 20%;
+  }
+  .p-scrl{
+    place-self:center center;
+    font-weight: bold;
+  }
+}
+
+
+
+// _____________________________Meet the Team Section
+#meet-team {
+  height: 100vh;
+  display: grid;
+       grid-template-columns: 0.5fr 3fr 0.5fr;
+       grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+}
+.b {
+  color: black;
+}
+.team-info{
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+}
+.team-pic{
+  width:160px;
+}
+.button{
+  margin: 20px auto;
+  cursor: pointer;
+  padding: 1em;
+  font-size: 1.2em;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-weight: 700;
   
+  background-color: $primary-color;
+  color: white;
+  white-space: nowrap;
+  box-shadow: 0px 0px 0px 0px transparentize($primary-color, .75);
+  @include transition(box-shadow .15s, transform .2s);
+
+  @include transform(translate(0, 0%));
+
+  &:hover{
+      box-shadow: 5px 5px 20px 5px transparentize(black, .85);
+      @include transform(translate(0,-20%));
+  }
+  &:active {
+      box-shadow: -5px -5px 10px 0px transparentize($primary-color, .65);
+      @include transform(translate(0, 0%));
+  }
 }
-.about-text p {
-  color: $body-bg-color;
-  
-}
-.p-scrl{
-  padding-left: 5em;
-  font-weight: bold;
-}
-#arrow-btn2{
-  width: 20%;
-  padding-left: 6em;
+// _____________________________Media Queries 
+
+@media screen and (min-width: 750px){
+  #bg-img {
+      background: url('../images/bg_desktop.jpg');
+      background-size:cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+  }
+  .logo{
+     font-size: 3.5rem;
+  }
 }
