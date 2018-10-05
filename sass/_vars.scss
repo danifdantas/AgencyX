@@ -3,8 +3,10 @@
 // main colors
 $body-bg-color: #FCFCFC;
 $primary-color: #F20909;
+$footer-color:#A2A2A4;
 $bg-alpha: rgba(74, 74, 75, 0.5);
 $bg-alpha-nav:rgba(255, 238, 236, 0.753);
+
 
 //Fonts
 $main-font: 'Open Sans', sans-serif;
@@ -22,6 +24,15 @@ $logo-shadow: 0px 5px 15px rgba(242,9,9,0.8);
 $main-transition: all 0.3s ease;
 
 // Mixins
+@mixin btn-gradient(){
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f20909+0,bc1607+100 */
+    background: #f20909; /* Old browsers */
+    background: -moz-linear-gradient(top, #f20909 0%, #bc1607 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f20909 0%,#bc1607 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f20909 0%,#bc1607 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f20909', endColorstr='#bc1607',GradientType=0 ); /* IE6-9 */
+}
+
 @mixin blur-effect($value){
     -webkit-filter: blur($value);
     -moz-filter: blur($value);

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,29 +8,37 @@
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script:700|Open+Sans:300i,400,600" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <title>Agency X</title>
-	
 </head>
 
 <body>
 <div class="wrapper"> <!-- Wrapper starts -->
-  
     <section id="bg-img">
       <h1 class="hidden">Agency X Landing Page</h1>
         <div id="home-container">
           <nav id="main-nav">
+              <h2 class="hidden">Main Navigation</h2>
               <div id="menuToggle">
                   <input type="checkbox" />
                   <span class="hamburger line1"></span>
                   <span class="hamburger line2"></span>
                   <span class="hamburger line3"></span>
             <ul id="menu">
-                <!-- <li><a href="#"><object data="images/home-icon.svg" type="" class="icon"></object>Home</a></li> -->
+                <li><a href="#home-container">Home</a><object data="images/home-icon.svg" type="" class="icon"></object></li>
                 <li><a href="#about-us">About Us <object data="images/about-icon.svg" type="" class="icon"></object></a></li>
-                <li><a href="#">Our Work <object data="images/our-work-icon.svg" type="" class="icon"></object></a></li>
+                <li><a href="#meet-team">Our Work <object data="images/work-icon.svg" type="" class="icon"></object></a></li>
                 <li><a href="#">Contact <object data="images/contact-icon.svg" type="" class="icon"></object></a></li>
+
                 <!-- <i class="fab fa-black-tie"></i> -->
             </ul>
             </div>  <!-- menuToggle end -->
+          </nav>
+          <nav class="social-media-nav">
+            <h2 class="hidden">Social Media Navigation</h2>
+            <ul>
+              <li><i class="fab fa-facebook-f fa-2x"></i></li>
+              <li><i class="fab fa-twitter fa-2x"></i></li>
+              <li><i class="fab fa-instagram fa-2x"></i></li>
+            </ul>
           </nav>
           <div id="logo-ctn">
               <h1 class="logo">AGENCY</h1>
@@ -56,13 +65,34 @@
         </div>
       </section>
       <section id="meet-team">
-          <h1 class="page-title b">Meet The Team</h1>
-          <div class="team-info">
-            <img class="team-pic" src="images/blake_pic.png" alt="">
-            <a href="#" id="" class="button" > View Work </a>
-          </div>
+          <h1>Meet The Team</h1>
 
+          <div class="designer">
+            <img class="des-pic" src="images/blake_pic.png" alt="">
+            <a href="#" id="" class="button" > View Work </a> 
+            <p class="member-name">Blake Hause</p>
+            <small>Designer & Front-End Developer</small> 
+          </div>
+          <div class="job-desc">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam est magnam id non reprehenderit dolor dolore praesentium beatae dolorem, repudiandae explicabo rerum nesciunt corporis tenetur minima suscipit similique voluptatibus.</p>
+          </div>
+            <div class="dev">
+              <img src="images/dev-pic_mobile.png" alt="" class="dev-pic">
+                <a href="#" id="" class="button" > View Work </a> 
+                <p class="member-name">Daniela Dantas</p>
+                <small>Front-End & Back-End Developer</small> 
+            </div>
+            <div class="dev-job-desc">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam est magnam id non reprehenderit dolor dolore praesentium beatae dolorem, repudiandae explicabo rerum nesciunt corporis tenetur minima suscipit similique voluptatibus.</p>
+              </div>
       </section>
+      <footer class="main-footer">
+        <div class="footer-docs">
+          <p class="border-right">Privacy</p><p class="border-right">Terms & Condition</p><p class="last">Feedback</p>
+        </div>
+      
+        <p class="copyright">Copyright © 2018 Agency X</p>
+      </footer>
     
     </div> <!-- Wrapper ends -->
  
@@ -72,5 +102,4 @@
   <!-- javascript includes -->
 
   <script src="js/main.js"></script>
-</body>
 </html>

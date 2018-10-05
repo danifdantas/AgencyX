@@ -13,6 +13,10 @@ body{
 a{
   text-decoration: none;
 }
+p{
+  padding: 0;
+    margin: 0;
+}
 .hidden {
     display: none;
 }
@@ -51,7 +55,7 @@ a{
 #main-nav a:hover
 {
   color:$primary-color;
-  padding-left: 3px;
+  padding-left: 5px;
 }
 #menuToggle
 {
@@ -141,9 +145,6 @@ a{
   padding-left: 10px;
   transition: all 0.3s ease;
 }
-.icon:hover {
-  color:$primary-color;  
-}
 
 #menu li
 {
@@ -158,6 +159,41 @@ a{
   transform: none;
 }
 //___________________________ Nav  styles end
+//___________________________ Social Media Nav  
+.social-media-nav{
+  position:absolute;
+  left:85%;
+  top: 30%;
+  li{
+    list-style-type:none;
+    padding: 15px;
+    transition: .6s ease;
+    // transition: background-color .3s ease;
+    color:$primary-color;
+    position:relative;
+    border-radius: 5px;
+  }
+  
+  & li:hover{
+    padding-left: 30px;
+    color:black;
+    background-color: $bg-alpha-nav;
+  }
+  ul{
+    position: fixed;
+    overflow: hidden;
+    width:100px;
+  }
+  // & li:nth-child(1){
+  //   background: #3b5998;
+  // }
+  // & li:nth-child(2){
+  //   background: #00aced;
+  // }
+  // & li:nth-child(3){
+  //   background: #dd;
+  // }
+}
 
 // __________________________Logo Styles
 #logo-ctn {
@@ -207,9 +243,9 @@ a{
 .page-title{
   grid-column: 2 / 3;
   place-self:center center;
-  padding-top: 1em;
+  padding-top: 0.5em;
   font-family: $title-font;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: $body-bg-color;
   
 }
@@ -229,57 +265,119 @@ a{
     width: 20%;
   }
   .p-scrl{
-    place-self:center center;
+    padding-top: 1em;
+    padding-bottom: 1em;
     font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .paragraph{
+    line-height: 1.5em;
+    text-align: center;
   }
 }
-
-
 
 // _____________________________Meet the Team Section
 #meet-team {
   height: 100vh;
+  margin-top: -20px;
   display: grid;
        grid-template-columns: 0.5fr 3fr 0.5fr;
-       grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
-}
-.b {
-  color: black;
-}
-.team-info{
-  grid-column: 2 / 3;
-  grid-row: 2 / 4;
-  display: grid;
-  grid-template-areas: 
-  'team-pic button';
+       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
+       h1{
+        padding-top: 1em;
+        font-family: $title-font;
+        font-size: 3.2rem;
+        grid-column: 2 / 3;
+        // grid-row: 1 / 5;
+       justify-self: center;
+       
+       }
 }
-.team-pic{
-  grid-area: team-pic;
+.designer{
+  grid-column: 2;
+  grid-row: 3;
+  display: grid;
+  margin-top: -20px;
+  // min-height: 200px;
+  // margin-top: 1.5em;
+  grid-template-columns: 1fr 1fr;
+  
+}
+  .member-name{
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 4.5em;
+     // margin-left: 1em;
+    justify-self: center;
+
+  }
+  small{
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    margin-top: 7.3em;
+   margin-left: 2em;
+   color:$primary-color;
+  }
+
+.des-pic{
+  grid-column: 1;
+  justify-self: center;
   width:160px;
+  
 }
 .button{
-  grid-area: button;
+  margin-top: 1em;
+  margin-left: 1em;
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
   height: 25px;
-  // width:160px;
+  line-height: 25px;
+  width:110px;
   cursor: pointer;
   text-align: center;
-  padding: 0.7em;
-  font-size: 1.0em;
+  padding: 0.6em;
+  font-size: 0.9em;
   border-radius: 50px;
   text-transform: uppercase;
-  // font-weight: 700;
-  background-color: $primary-color;
+  @include btn-gradient();
   color: white;
   white-space: nowrap;
-  box-shadow: 0px 0px 0px 0px transparentize($primary-color, .75);
-  @include transition(box-shadow .15s, transform .2s);
+  box-shadow: 5px 5px 20px 5px transparentize(black, .85);
+  @include transition(background .3s, ease);
 
   &:hover{
-      box-shadow: 5px 5px 20px 5px transparentize(black, .85);
-      @include transform(translate(0,-20%));
+      background: $primary-color;
+      @include transform(translate(0,-5%));
   }
- 
+  &:active{
+    position:relative;
+    top: 5px;
+  } 
+}
+.job-desc{
+  grid-column: 2;
+  grid-row: 3;
+  margin-top: 10em;
+}
+.dev{
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  display: grid;
+  margin-top: 1.5em;
+  grid-template-columns: 1fr 1fr;
+}
+.dev-pic{
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: center;
+  width:160px;
+}
+.dev-job-desc{
+  grid-column: 2;
+  grid-row: 5;
 }
 // _____________________________Media Queries 
 
@@ -294,4 +392,27 @@ a{
   .logo{
      font-size: 3.5rem;
   }
+}
+
+.main-footer{
+  background-color: $footer-color;
+  display:grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 1.5em;
+}
+.footer-docs{
+  grid-row: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 1.5em;
+}     
+.border-right{
+  border-right: 1px solid black;
+  padding-right: 10%;
+}
+
+.copyright{
+  grid-row: 2;
+  justify-self: center;
 }
