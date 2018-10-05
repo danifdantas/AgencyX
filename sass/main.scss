@@ -9,6 +9,8 @@ body{
     padding: 0;
     margin: 0;
     font-family: $main-font; 
+    height: 100vh;
+    overflow-x: hidden;
 }
 a{
   text-decoration: none;
@@ -24,6 +26,12 @@ p{
 .wrapper {
     display: grid;
     grid-gap: 20px;
+}
+.bodyScroll {
+  height: 100vh;
+  overflow-x:hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 // ________________________________Landing Pg
 #bg-img {
@@ -300,9 +308,6 @@ p{
   grid-column: 2;
   grid-row: 3;
   display: grid;
-  margin-top: -20px;
-  // min-height: 200px;
-  // margin-top: 1.5em;
   grid-template-columns: 1fr 1fr;
   
 }
@@ -326,8 +331,7 @@ p{
 .des-pic{
   grid-column: 1;
   justify-self: center;
-  width:160px;
-  
+  width:160px; 
 }
 .button{
   margin-top: 1em;
@@ -400,6 +404,31 @@ p{
        grid-template-rows: 0.5fr 1fr 0.5fr;
 
   }
+  #meet-team {
+    grid-template-columns: 0.5fr 1fr 0.2fr 1fr 0.5fr;
+  }
+  .designer{
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .dev{
+    grid-column: 4;
+    grid-row: 2;
+  }
+  .job-desc{
+    margin-top: 0;
+  }
+  .des-pic{
+    align-self: center;
+  }
+  .dev-job-desc{
+    grid-column: 4;
+    grid-row: 3;
+  }
+  .main-footer{
+    grid-row: 4;
+  }
+  
 }
 // ______________________________LightBox
 .lightbox {
@@ -437,9 +466,10 @@ p{
 .main-footer{
   background-color: $footer-color;
   display:grid;
-  grid-row: 6;
+  grid-row: 9;
   grid-template-rows: 1fr 1fr;
   padding: 1.5em;
+  color: white;
 }
 .footer-docs{
   grid-row: 1;
@@ -449,7 +479,7 @@ p{
   margin-bottom: 1.5em;
 }     
 .border-right{
-  border-right: 1px solid black;
+  border-right: 1px solid white;
   padding-right: 10%;
 }
 
