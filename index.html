@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <h1 class="hidden">Agency X One Page Portfolio</h1>
 <div class="wrapper"> <!-- Wrapper starts -->
     <section id="bg-img">
       <h1 class="hidden">Agency X Landing Page</h1>
@@ -23,10 +24,10 @@
                   <span class="hamburger line2"></span>
                   <span class="hamburger line3"></span>
             <ul id="menu">
-                <li><a href="#home-container">Home</a><object data="images/home-icon.svg" type="" class="icon"></object></li>
-                <li><a href="#about-us">About Us <object data="images/about-icon.svg" type="" class="icon"></object></a></li>
-                <li><a href="#meet-team">Our Work <object data="images/work-icon.svg" type="" class="icon"></object></a></li>
-                <li><a href="#">Contact <object data="images/contact-icon.svg" type="" class="icon"></object></a></li>
+                <li><a id="home" class="nav-btn" href="#home-container">Home</a><object data="images/home-icon.svg" type="" class="icon"></object></li>
+                <li><a id="about" class="nav-btn" href="#about-us">About Us <object data="images/about-icon.svg" type="" class="icon"></object></a></li>
+                <li><a id="team" class="nav-btn" href="#meet-team">Our Work <object data="images/work-icon.svg" type="" class="icon"></object></a></li>
+                <li><a id="contact" class="nav-btn" href="#">Contact <object data="images/contact-icon.svg" type="" class="icon"></object></a></li>
 
                 <!-- <i class="fab fa-black-tie"></i> -->
             </ul>
@@ -60,7 +61,7 @@
             Ipsam, cupiditate maiores!</p>
             <p class="p-scrl">Scroll Down</p>
       
-              <a href="#"><img id="arrow-btn2" src="images/arrow-btn.svg" alt="down arrow button"></a>
+              <a href="#meet-team"><img id="arrow-btn2" src="images/arrow-btn.svg" alt="down arrow button"></a>
             
         </div>
       </section>
@@ -69,7 +70,7 @@
 
           <div class="designer">
             <img class="des-pic" src="images/blake_pic.png" alt="">
-            <a href="#" id="" class="button" > View Work </a> 
+            <a href="#meet-team" id="blake-work" class="button" > View Work </a> 
             <p class="member-name">Blake Hause</p>
             <small>Designer & Front-End Developer</small> 
           </div>
@@ -78,7 +79,7 @@
           </div>
             <div class="dev">
               <img src="images/dev-pic_mobile.png" alt="" class="dev-pic">
-                <a href="#" id="" class="button" > View Work </a> 
+                <a href="#meet-team" id="dani-work" class="button" > View Work </a> 
                 <p class="member-name">Daniela Dantas</p>
                 <small>Front-End & Back-End Developer</small> 
             </div>
@@ -86,6 +87,18 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur numquam est magnam id non reprehenderit dolor dolore praesentium beatae dolorem, repudiandae explicabo rerum nesciunt corporis tenetur minima suscipit similique voluptatibus.</p>
               </div>
       </section>
+      <section class="lightbox b">
+         <a href="#meet-team" class="close-lightbox">
+           <i class="far fa-times-circle fa-3x"></i>
+           <img class="blakePort" src="images/blake-des-1.jpg" alt="Blakes Portfolio Work 1">
+           <img class="blakePort" src="images/blake-des-2.jpg" alt="Blakes Portfolio Work 2">
+          </a>
+        </section>
+        <section class="lightbox d">
+            <a href="#meet-team" class="close-lightbox">
+              <i class="far fa-times-circle fa-3x"></i>
+             </a>
+           </section>
       <footer class="main-footer">
         <div class="footer-docs">
           <p class="border-right">Privacy</p><p class="border-right">Terms & Condition</p><p class="last">Feedback</p>
