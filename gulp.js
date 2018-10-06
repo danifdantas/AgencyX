@@ -1,3 +1,5 @@
+
+'use strict';
 // gulp modules required
 // import gulp and whatever plugins we need
 var gulp = require('gulp');

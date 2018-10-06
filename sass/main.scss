@@ -9,7 +9,7 @@ body{
     padding: 0;
     margin: 0;
     font-family: $main-font; 
-    height: 100vh;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 a{
@@ -26,6 +26,10 @@ p{
 .wrapper {
     display: grid;
     grid-gap: 20px;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -142px;
 }
 .bodyScroll {
   height: 100vh;
@@ -282,17 +286,18 @@ p{
   .paragraph{
     line-height: 1.5em;
     text-align: center;
+    font-size: 1em;
   }
 }
 
 // _____________________________Meet the Team Section
 #meet-team {
-  height: 100vh;
+  // height: 100vh;
   margin-top: -20px;
-  margin-bottom: 20px;
+  // margin-bottom: 5%;
   display: grid;
        grid-template-columns: 0.5fr 3fr 0.5fr;
-       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      //  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
        h1{
         padding-top: 1em;
@@ -368,6 +373,9 @@ p{
   grid-row: 3;
   margin-top: 10em;
 }
+.job-desc p{
+  line-height: 1.5em;
+}
 .dev{
   grid-column: 2 / 3;
   grid-row: 4 / 5;
@@ -414,6 +422,7 @@ p{
   .dev{
     grid-column: 4;
     grid-row: 2;
+    margin-top:0;
   }
   .job-desc{
     margin-top: 0;
@@ -425,8 +434,10 @@ p{
     grid-column: 4;
     grid-row: 3;
   }
-  .main-footer{
-    grid-row: 4;
+  .paragraph{
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 1.2em;
   }
   
 }
@@ -466,10 +477,16 @@ p{
 .main-footer{
   background-color: $footer-color;
   display:grid;
-  grid-row: 9;
+  position: relative;
+  bottom: 0;
+  margin-top:1em;
+  // grid-row: 1;
   grid-template-rows: 1fr 1fr;
   padding: 1.5em;
   color: white;
+}
+footer, .push {
+  height: 142px; /* .push must be the same height as .footer */
 }
 .footer-docs{
   grid-row: 1;

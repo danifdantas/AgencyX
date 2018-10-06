@@ -18,7 +18,7 @@ closeLightB = document.querySelector('.close-lightbox');
 // Functions
 function openLightBox(e) {
     var id = this.id;
-    console.log(id);
+    //console.log(id);
     // var currentSource = portfolio.currentSrc;
     // console.log(currentSource);
         lightbox.classList.add('show-lightbox');
