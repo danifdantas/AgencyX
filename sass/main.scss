@@ -286,18 +286,18 @@ p{
   .paragraph{
     line-height: 1.5em;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 
 // _____________________________Meet the Team Section
 #meet-team {
-  height: 100vh;
+  // height: 100vh;
   margin-top: -20px;
   // margin-bottom: 5%;
   display: grid;
        grid-template-columns: 0.5fr 3fr 0.5fr;
-       grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      //  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
        h1{
         padding-top: 1em;
@@ -433,6 +433,11 @@ p{
   .dev-job-desc{
     grid-column: 4;
     grid-row: 3;
+  }
+  .paragraph{
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 1.2em;
   }
   
 }
