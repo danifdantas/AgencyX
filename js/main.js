@@ -1,68 +1,64 @@
-'use strict';
+"use strict";
 // Variables
 
-// var y = window.scrollY
-// console.log(y);
-// var nav = document.querySelectorAll('.nav-btn');
-// var arrowBtn1 = document.querySelector('#arrow-btn');
-// document.querySelector('header').scrollIntoView({ behavior: 'smooth' });
-var blakeWork = document.querySelector('#blake-work'),
-daniWork = document.querySelector('#dani-work'),
-lightbox = document.querySelector('.lightbox'),
-portfolio = document.querySelectorAll('.blakePort'),
-lightboxd = document.querySelector('.d'),
-currentSource,
-closeLightB = document.querySelector('.close-lightbox');
-// about us 855px end page 1636px
+let button = document.querySelectorAll(".button"),
+  lightbox = document.querySelector(".lightbox"),
+  closeLB = document.querySelector(".close");
+
+var slides = document.querySelector(".mySlides"),
+  slide = document.querySelectorAll(".slides"),
+  demo = document.querySelectorAll(".demo"),
+  caption = document.querySelector("#caption"),
+  prev = document.querySelector(".prev"),
+  next = document.querySelector(".next"),
+  pick = 1;
+showSlides(pick);
 
 // Functions
-function openLightBox(e) {
-    var id = this.id;
-    //console.log(id);
-    // var currentSource = portfolio.currentSrc;
-    // console.log(currentSource);
-        lightbox.classList.add('show-lightbox');
-    }
-    
+function openLightBox() {
+  lightbox.style.display = "block";
+}
 
 function closeLightBox() {
-    //console.log('clicked');
-    lightbox.classList.remove('show-lightbox');
+  //console.log('clicked');
+  lightbox.style.display = "none";
 }
-// function scrollIntoView(){
-//     console.log('clicked');
-//     behavior: 'smooth';
-// }
-// function scroll(e){
-//    // console.log('clicked');
-//     var navBtn = this.id;
-//     //console.log(navBtn);
-//     if (navBtn == 'home') {
-//         // scrollTo(0, 0, (behavior: 'smooth');
-//         window.scroll({
-//             top: 0, 
-//             left: 0, 
-//             behavior: 'smooth' 
-//           });
-//     }else if (navBtn == 'about') {
-//         // scrollTo(0, 855);
-//         window.scroll({
-//             top: 855, 
-//             left: 0, 
-//             behavior: 'smooth' 
-//           });
-//     }
-// }
+function currentSlide(e) {
+  var pick = this.dataset.pick;
+  //console.log(pick);
+  showSlides(pick);
+}
 
-
+function prevSlides(e) {
+  var pick = this.dataset.pick;
+  showSlides(pick);
+}
+function showSlides(n) {
+  var i;
+  console.log(pick);
+  // if (n > slides.length) {
+  //   slideIndex = 1;
+  // }
+  // if (n < 1) {
+  //   slideIndex = slides.length;
+  // }
+  // for (i = 0; i < slides.length; i++) {
+  //   slides[i].style.display = "none";
+  // }
+  // for (i = 0; i < demo.length; i++) {
+  //   demo[i].className = demo[i].className.replace(" active", "");
+  // }
+  // slides[slideIndex - 1].style.display = "block";
+  // demo[slideIndex - 1].className += " active";
+  // caption.innerHTML = demo[slideIndex - 1].alt;
+}
 
 // Event Listeners
-blakeWork.addEventListener('click', openLightBox, false);
-daniWork.addEventListener('click', openLightBox, false);
 
-closeLightB.addEventListener('click', closeLightBox, false);
-// for (var i = 0; i < nav.length; i++) {
-//     nav[i].addEventListener('click', scroll, false);
-    
-// }
-// arrowBtn1.addEventListener('click', scrollIntoView, false);
+closeLB.addEventListener("click", closeLightBox, false);
+for (var i = 0; i < button.length; i++) {
+  button[i].addEventListener("click", openLightBox, false);
+}
+prev.addEventListener("click", prevSlides, false);
+next.addEventListener("click", prevSlides, false);
+demo.forEach(demo => demo.addEventListener("click", currentSlide));

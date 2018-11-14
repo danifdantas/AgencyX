@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+      integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script:700&#124;Open+Sans:300i,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Agency X</title>
+  </head>
+  <header>
+    <h2 class="hidden">Nav Header</h2>
+    <nav id="main-nav">
+      <h2 class="hidden">Main Navigation</h2>
+      <div id="menuToggle">
+        <input type="checkbox" /> <span class="hamburger line1"></span>
+        <span class="hamburger line2"></span>
+        <span class="hamburger line3"></span>
+        <ul id="menu">
+          <li>
+            <a id="home" class="nav-btn" href="#home-container">Home</a
+            ><object data="images/home-icon.svg" class="icon"></object>
+          </li>
+          <li>
+            <a id="about" class="nav-btn" href="#about-us"
+              >About Us
+              <object data="images/about-icon.svg" class="icon"></object
+            ></a>
+          </li>
+          <li>
+            <a id="team" class="nav-btn" href="#meet-team"
+              >Our Work
+              <object data="images/work-icon.svg" class="icon"></object
+            ></a>
+          </li>
+          <li>
+            <a id="contact" class="nav-btn" href="#"
+              >Contact
+              <object data="images/contact-icon.svg" class="icon"></object
+            ></a>
+          </li>
+
+          <!-- <i class="fab fa-black-tie"></i> -->
+        </ul>
+      </div>
+      <!-- menuToggle end -->
+    </nav>
+  </header>
+  <body>
+    <h1 class="hidden">Agency X One Page Portfolio</h1>
+    <div class="bodyScroll">
+      <div class="wrapper">
+        <!-- Wrapper starts -->
+        <section id="bg-img">
+          <h1 class="hidden">Agency X Landing Page</h1>
+          <div id="home-container">
+            <nav class="social-media-nav">
+              <h2 class="hidden">Social Media Navigation</h2>
+              <ul>
+                <li><i class="fab fa-facebook-f fa-2x"></i></li>
+                <li><i class="fab fa-twitter fa-2x"></i></li>
+                <li><i class="fab fa-instagram fa-2x"></i></li>
+              </ul>
+            </nav>
+            <div id="logo-ctn">
+              <h1 class="logo">AGENCY</h1>
+              <h1 class="logo x">X</h1>
+            </div>
+            <div class="arrow-btn-ctn">
+              <a id="arrow-btn" href="#about-us"
+                ><img src="images/arrow-btn.svg" alt="down arrow button"
+              /></a>
+            </div>
+          </div>
+          <!-- home-container end -->
+        </section>
+        <section id="about-us">
+          <h1 class="page-title">About Us</h1>
+          <div class="about-text">
+            <p class="paragraph">
+              At AgencyX we are passionate about the work we do. We don’t just
+              build websites we create stunning digital experiences that set
+              your brand apart. Our Team enables meaningful connections with our
+              clients by delivering an unforgettable user journey and
+              experience.
+            </p>
+            <p class="p-scrl">Scroll Down</p>
+
+            <a href="#meet-team"
+              ><img
+                id="arrow-btn2"
+                src="images/arrow-btn.svg"
+                alt="down arrow button"
+            /></a>
+          </div>
+        </section>
+        <section id="meet-team">
+          <h1>Meet The Team</h1>
+
+          <div class="designer">
+            <img class="des-pic" src="images/blake_pic.png" alt="" />
+            <a href="#meet-team" id="blake-work" class="button"> View Work </a>
+            <p class="member-name">Blake Hause</p>
+            <small>Designer & Front-End Developer</small>
+          </div>
+          <div class="job-desc">
+            <p class="">
+              Hi, I’m Blake Hause! I am web designer and front-end developer
+              from London, Ontario currently enrolled in the Interactive Media
+              and Design Program at Fanshawe College. Since beginning my journey
+              at Fanshawe I have become familiar and proficient with many design
+              and development tools. I have a passion for creating simple and
+              effective content using clean design patterns and attentive
+              interactions. I also enjoy coding things from scratch; bringing my
+              designs to life in the browser.
+            </p>
+          </div>
+         
+          <div class="dev">
+            <img src="images/dev-pic_mobile.png" alt="" class="dev-pic" />
+            <a href="#meet-team" id="dani-work" class="button"> View Work </a>
+            <p class="member-name">Daniela Dantas</p>
+            <small>Front-End & Back-End Developer</small>
+          </div>
+          <div class="dev-job-desc">
+            <p>
+              Hi, I’m Daniela Dantas! I am a front-end and back-end developer
+              from Brazil currently living in London, Ontario. I am enrolled in
+              the Interactive Media Design Program at Fanshawe College and at
+              present I am part of Fanshawe's Reactr Program. Since beginning my
+              journey at Fanshawe I have become familiar and proficient with
+              many design and development tools. I have a passion for creating
+              simple and effective content using clean design patterns and
+              attentive interactions. I also enjoy coding things from scratch;
+              bringing my designs to life in the browser.
+            </p>
+          </div>
+        </section>
+        <!-- <section class="lightbox b">
+          <h2 class="hidden">Portfolio Lightbox</h2>
+          <a href="#meet-team" class="close-lightbox">
+            <i class="far fa-times-circle fa-3x"></i>
+            <img
+              class="blakePort"
+              src="images/blake-des-2.jpg"
+              alt="Blakes Portfolio Work 2"
+            />
+            <img
+              class="blakePort"
+              src="images/blake-des-1.jpg"
+              alt="Blakes Portfolio Work 1"
+            />
+          </a>
+          <p></p>
+        </section>
+        <section class="lightbox d">
+          <a href="#meet-team" class="close-lightbox">
+            <i class="far fa-times-circle fa-3x"></i>
+          </a>
+        </section>
+        <div class="push"></div>
+      </div> -->
+       <!-- Lightbox START -->
+       <div id="myLightbox" class="lightbox">
+        <span class="close cursor"><i class="far fa-times-circle fa-3x"></i></span>
+        <div class="lightbox-content">
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="images/projects/img1.jpg" />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="images/projects/img2.jpg" />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="images/projects/img3.jpg"  />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="images/projects/img4.jpg"  />
+          </div>
+
+          <!-- Next/previous controls -->
+          <a class="prev" data-pick = "-1">&#10094;</a>
+          <a class="next" data-pick = "1">&#10095;</a>
+
+          <!-- Caption text -->
+          <div class="caption-container"><p id="caption"></p></div>
+
+          <!-- Thumbnail image controls -->
+          <div class="column">
+            <img
+              class="demo" data-pick = "1"
+              src="images/projects/img1.jpg"
+              alt="Project Name 1"
+            />
+          </div>
+
+          <div class="column">
+            <img
+              class="demo" data-pick = "2"
+              src="images/projects/img2.jpg"
+              alt="Project Name 2"
+            />
+          </div>
+
+          <div class="column">
+            <img
+              class="demo" data-pick = "3"
+              src="images/projects/img3.jpg"
+              alt="Project Name 3"
+            />
+          </div>
+
+          <div class="column">
+            <img
+              class="demo" data-pick = "4"
+              src="images/projects/img4.jpg"
+              alt="Project Name 4"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Wrapper ends -->
+      <footer class="main-footer">
+        <h2 class="hidden">Agency X Footer</h2>
+        <div class="footer-docs">
+          <p class="border-right">Privacy</p>
+          <p class="border-right">Terms & Condition</p>
+          <p class="last">Feedback</p>
+        </div>
+
+        <p class="copyright">Copyright © 2018 Agency X</p>
+      </footer>
+    </div>
+    <!-- BodyScroll ends -->
+  </body>
+
+  <!-- javascript includes -->
+
+  <script src="js/main.js"></script>
+</html>
