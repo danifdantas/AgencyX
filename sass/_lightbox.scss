@@ -1,20 +1,10 @@
-.column {
-    //grid-row: 2;
-    float: left;
-    width: 25%;
-}
-
-// #myLightbox {
-//     display: grid;
-//     grid-template-columns: repeat(4, 1fr);
-// }
 /* The Lightbox (background) */
 
 .lightbox {
     display: none;
     position: fixed;
     z-index: 1;
-    padding-top: 100px;
+    padding-top: 50px;
     left: 0;
     top: 0;
     width: 100%;
@@ -23,27 +13,43 @@
     background-color: $light-box-alpha;
 }
 
-/* Modal Content */
+/* Lightbox Content */
 
 .lightbox-content {
-    position: relative; //grid-column: span 4;
+    position: relative;
     background-color: #fefefe;
     margin: auto;
     padding: 0;
-    width: 90%;
+    width: 85%;
     max-width: 1200px;
-    .mySlides {
-        display: none;
-        transition: all 0.5s; // width: 50%;
-        img {
-            max-width: 100%;
-        }
+    .main-img img,
+    .imgs img {
+        width: 100%;
+    }
+}
+
+.imgs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+.imgs img:hover {
+    opacity: 0.6;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
     }
 }
 
 /* The Close Button */
-
-/* Hide the slides by default */
 
 .close {
     color: $primary-color;
@@ -52,19 +58,19 @@
     right: 25px;
     font-size: 20px;
     font-weight: bold;
+    transition: 0.4s ease;
 }
 
 .close:hover,
 .close:focus {
-    color: #999;
-    text-decoration: none;
+    color: #fff;
     cursor: pointer;
 }
 
 /* Next & previous buttons */
 
-.prev,
-.next {
+#prev,
+#next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -83,19 +89,9 @@
     }
 }
 
-.next {
+#next {
     right: 0;
     border-radius: 3px 0 0 3px;
-}
-
-/* Number text (1/3 etc) */
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
 }
 
 /* Caption text */
@@ -107,20 +103,17 @@
     color: white;
 }
 
-img.demo {
-    opacity: 0.6;
-    width: 99%;
-}
-
-.active,
-.demo:hover {
-    opacity: 1;
-}
-
-img.hover-shadow {
-    transition: 0.3s;
-}
-
-.hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+// img.demo {
+//     opacity: 0.6;
+//     width: 99%;
+// }
+// .active,
+// .demo:hover {
+//     opacity: 1;
+// }
+// img.hover-shadow {
+//     transition: 0.3s;
+// }
+// .hover-shadow:hover {
+//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+// }
