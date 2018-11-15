@@ -1,0 +1,119 @@
+/* The Lightbox (background) */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: $light-box-alpha;
+}
+
+/* Lightbox Content */
+
+.lightbox-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 85%;
+    max-width: 1200px;
+    .main-img img,
+    .imgs img {
+        width: 100%;
+    }
+}
+
+.imgs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+.imgs img:hover {
+    opacity: 0.6;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* The Close Button */
+
+.close {
+    color: $primary-color;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.4s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+
+#prev,
+#next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+#next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Caption text */
+
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+// img.demo {
+//     opacity: 0.6;
+//     width: 99%;
+// }
+// .active,
+// .demo:hover {
+//     opacity: 1;
+// }
+// img.hover-shadow {
+//     transition: 0.3s;
+// }
+// .hover-shadow:hover {
+//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+// }

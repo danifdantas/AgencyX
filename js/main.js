@@ -1,68 +1,67 @@
-'use strict';
+"use strict";
 // Variables
 
-// var y = window.scrollY
-// console.log(y);
-// var nav = document.querySelectorAll('.nav-btn');
-// var arrowBtn1 = document.querySelector('#arrow-btn');
-// document.querySelector('header').scrollIntoView({ behavior: 'smooth' });
-var blakeWork = document.querySelector('#blake-work'),
-daniWork = document.querySelector('#dani-work'),
-lightbox = document.querySelector('.lightbox'),
-portfolio = document.querySelectorAll('.blakePort'),
-lightboxd = document.querySelector('.d'),
-currentSource,
-closeLightB = document.querySelector('.close-lightbox');
-// about us 855px end page 1636px
+let button = document.querySelectorAll(".button"),
+  lightbox = document.querySelector(".lightbox"),
+  prev = document.querySelector("#prev"),
+  next = document.querySelector("#next"),
+  caption = document.querySelector("#caption"),
+  closeLB = document.querySelector(".close");
+const current = document.querySelector("#current");
+const imgs = document.querySelectorAll(".imgs img");
+const opacity = 0.6;
+var count = 0,
+  captions = ["Project 1", "Project 2", "Project 3", "Project 4"];
 
+imgs[0].style.opacity = opacity;
 // Functions
-function openLightBox(e) {
-    var id = this.id;
-    //console.log(id);
-    // var currentSource = portfolio.currentSrc;
-    // console.log(currentSource);
-        lightbox.classList.add('show-lightbox');
-    }
-    
+function openLightBox() {
+  lightbox.style.display = "block";
+}
 
 function closeLightBox() {
-    //console.log('clicked');
-    lightbox.classList.remove('show-lightbox');
+  //console.log('clicked');
+  lightbox.style.display = "none";
 }
-// function scrollIntoView(){
-//     console.log('clicked');
-//     behavior: 'smooth';
-// }
-// function scroll(e){
-//    // console.log('clicked');
-//     var navBtn = this.id;
-//     //console.log(navBtn);
-//     if (navBtn == 'home') {
-//         // scrollTo(0, 0, (behavior: 'smooth');
-//         window.scroll({
-//             top: 0, 
-//             left: 0, 
-//             behavior: 'smooth' 
-//           });
-//     }else if (navBtn == 'about') {
-//         // scrollTo(0, 855);
-//         window.scroll({
-//             top: 855, 
-//             left: 0, 
-//             behavior: 'smooth' 
-//           });
-//     }
-// }
+function imgClick(e) {
+  //reset the opacity
+  imgs.forEach(img => (img.style.opacity = 1));
+  //Change current image to src of clicked img
+  current.src = e.target.src;
+  // var position = e.target.index;
+  // console.log(position);
+  //caption.innerHTML = captions[pick];
+  //Add fade-in class
+  current.classList.add("fade-in");
 
+  //remove fade-in class
+  setTimeout(() => current.classList.remove("fade-in"), 500);
 
-
+  // Change the opacity
+  e.target.style.opacity = opacity;
+}
+function prevImg() {
+  count--;
+  if (count < 0) {
+    count = imgs.length - 1;
+  }
+  current.src = imgs[count].src;
+  caption.innerHTML = captions[count];
+}
+function nextImg() {
+  count++;
+  if (count == imgs.length) {
+    count = 0;
+  }
+  current.src = imgs[count].src;
+  caption.innerHTML = captions[count];
+}
 // Event Listeners
-blakeWork.addEventListener('click', openLightBox, false);
-daniWork.addEventListener('click', openLightBox, false);
 
-closeLightB.addEventListener('click', closeLightBox, false);
-// for (var i = 0; i < nav.length; i++) {
-//     nav[i].addEventListener('click', scroll, false);
-    
-// }
-// arrowBtn1.addEventListener('click', scrollIntoView, false);
+closeLB.addEventListener("click", closeLightBox, false);
+for (var i = 0; i < button.length; i++) {
+  button[i].addEventListener("click", openLightBox, false);
+}
+imgs.forEach(img => img.addEventListener("click", imgClick));
+prev.addEventListener("click", prevImg, false);
+next.addEventListener("click", nextImg, false);
